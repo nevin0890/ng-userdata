@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row">
+                <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+
+                                <th scope="col">id</th>
+                                <th scope="col">firstName </th>
+                                <th scope="col">lastName</th>
+                                <th scope="col">age</th>
+                                <th scope="col">gender</th>
+                                <th scope="col">email</th>
+                                <th scope="col">username </th>
+                                <th scope="col">bloodGroup</th>
+                                <th scope="col">phone</th>
+                                <th scope="col">image</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of getUsers.users">
+                                <td>{{i.id}}</td>
+                                <td>{{i.firstName}}</td>
+                                <td>{{i.lastName}}</td>
+                                <td>{{i.age}}</td>
+                                <td>{{i.gender}}</td>
+                                <td>{{i.email}}</td>
+                                <td>{{i.username}}</td>
+                                <td>{{i.bloodGroup}}</td>
+                                <td>{{i.phone}}</td>
+                                <td><img src="{{i.image}}" alt=""></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
