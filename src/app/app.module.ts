@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { UserDataComponent } from './user-data/user-data.component';
 
 const appRoutes: Routes = [
+  { path: '', component: UserDataComponent },
 
 ]
 
